@@ -1,0 +1,56 @@
+Operators	Operation	Example
+**	        Exponent	2 ** 3 = 8
+%	        Modulus/Remaider	22 % 8 = 6
+//	        Integer division	22 // 8 = 2
+/	        Division	22 / 8 = 2.75
+*	        Multiplication	3 * 3 = 9
+-	        Subtraction	5 - 2 = 3
++	        Addition	2 + 2 = 4i
+
+
+Boolean evaluation
+Never use == or != operator to evaluate boolean operation. Use the is or is not operators, or use implicit boolean evaluation.
+
+if name == 'Alice':
+    print('Hi Alice')
+elif age < 12:
+    print('lalal')
+else:
+    print('bbb')
+
+spam = 0
+while spam < 5:
+    print('hello')
+    spam = spam + 1
+
+while True:
+    print('Please type your name.')
+    name = input()
+    if name == 'your name':
+        break
+print('Thank you!')
+
+
+continue Statements
+When the program execution reaches a continue statement, the program execution immediately jumps back to the start of the loop.
+
+while True:
+    print('Who are you?')
+    name = input()
+    if name != 'Joe':
+        continue
+    print('Hello, Joe. What is the password? (It is a fish.)')
+    password = input()
+    if password == 'swordfish':
+        break
+print('Access granted.')
+
+>>> print('My name is')
+>>> for i in range(5):
+>>>     print('Jimmy Five Times ({})'.format(str(i)))
+My name is
+Jimmy Five Times (0)
+Jimmy Five Times (1)
+Jimmy Five Times (2)
+Jimmy Five Times (3)
+Jimmy Five Times (4)
