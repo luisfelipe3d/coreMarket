@@ -7,8 +7,8 @@ class MainSpider(scrapy.Spider):
     def parse(self, response):
         self.log('Estou aqui {}'.format(response.url))
         texts = response.xpath('//span[@class="text"]/text()').extract()
-
+    #sosdlkfjsdlfksjfdlskj
         for text in texts:
             yield {
-                'text2': texts
+                'text': texts
             }
