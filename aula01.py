@@ -10,5 +10,5 @@ class MainSpider(scrapy.Spider):
 
         for text in texts:
             yield {
-                'text': texts
+                'text2': texts
             }
